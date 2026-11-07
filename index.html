@@ -18,12 +18,16 @@
 <meta property="og:locale" content="it_IT">
 <meta name="twitter:card" content="summary_large_image">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"Ares Account Manager","url":"https://aresdigitalmarketing.com/","email":"aresaccountmanager@icloud.com","telephone":"+393770271507","description":"Ads Specialist freelance: gestione campagne Google Ads, Meta Ads, TikTok, Microsoft, LinkedIn e ChatGPT.","areaServed":"IT","address":{"@type":"PostalAddress","streetAddress":"Via Trencia 62","postalCode":"80126","addressLocality":"Napoli","addressCountry":"IT"}}</script>
-<!--
-  TRACCIAMENTO (da attivare in produzione):
-  1) Banner cookie con Google Consent Mode v2 (default "denied" prima di qualsiasi tag)
-  2) Google Tag Manager → GA4 + tag di conversione Google Ads + Meta Pixel (solo dopo consenso)
-  Eventi da tracciare: click_whatsapp, click_email, invio_modulo (pagina grazie.html)
--->
+<!-- Google Consent Mode v2 (tutto negato di default) + Google Tag Manager -->
+<script>
+window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}
+gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',functionality_storage:'granted',security_storage:'granted',wait_for_update:500});
+gtag('set','ads_data_redaction',true);gtag('set','url_passthrough',true);
+try{var c=JSON.parse(localStorage.getItem('ares_consent_v1'));if(c&&Date.now()-c.t<15552e6)gtag('consent','update',{analytics_storage:c.s?'granted':'denied',ad_storage:c.m?'granted':'denied',ad_user_data:c.m?'granted':'denied',ad_personalization:c.m?'granted':'denied'})}catch(e){}
+var GTM_ID='GTM-XXXXXXX';
+if(GTM_ID.indexOf('XXXX')<0)(function(w,d,s,l,i){w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s);j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i;f.parentNode.insertBefore(j,f)})(window,document,'script','dataLayer',GTM_ID);
+</script>
+<script src="/js/consent.js" defer></script>
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -260,7 +264,7 @@
           <option>Meno di 500 €</option><option>500 – 1.500 €</option><option>1.500 – 5.000 €</option><option>Oltre 5.000 €</option><option>Da definire</option>
         </select></div>
       <div class="field"><label for="msg">Raccontami la tua attività e il tuo obiettivo</label><textarea id="msg" name="messaggio"></textarea></div>
-      <label class="consent"><input type="checkbox" name="privacy" required><span>Ho letto l'<a href="#privacy">informativa privacy</a> e acconsento al trattamento dei dati per essere ricontattato. *</span></label>
+      <label class="consent"><input type="checkbox" name="privacy" required><span>Ho letto l'<a href="/privacy-policy" target="_blank">informativa privacy</a> e acconsento al trattamento dei dati per essere ricontattato. *</span></label>
       <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" style="display:none" aria-hidden="true">
       <button class="btn btn-primary" type="submit">Invia la richiesta</button>
       <p class="form-msg" role="status" aria-live="polite"></p>
@@ -280,7 +284,7 @@
     <div class="legal">
       <!-- TODO: inserire P.IVA (obbligatoria sul sito per chi ha partita IVA) -->
       <span>© 2026 Ares Account Manager · Sede legale: Via Trencia 62, 80126 Napoli · P.IVA ———</span>
-      <span><a href="#privacy" id="privacy">Privacy policy</a> · <a href="#cookie">Cookie policy</a></span>
+      <span><a href="/privacy-policy">Privacy policy</a> · <a href="/cookie-policy">Cookie policy</a> · <a href="#" data-cookie-prefs>Preferenze cookie</a></span>
     </div>
   </div>
 </footer>
