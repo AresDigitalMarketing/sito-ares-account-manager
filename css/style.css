@@ -217,3 +217,10 @@ footer{padding:50px 0 34px;border-top:1px solid var(--line);background:var(--bg-
 .lp-list b{color:#fff;font-weight:500}
 @media (max-width:860px){.lp-incl{grid-template-columns:1fr}}
 @media (max-width:520px){.lp-head-cta{padding:9px 14px;font-size:.85rem}}
+
+/* Link "Scopri di più" e box Google + Meta in homepage */
+.svc .more{display:inline-flex;align-items:center;gap:6px;margin-top:18px;font-size:.95rem;font-weight:500;color:var(--cyan);border-bottom:1px solid rgba(34,230,255,.35);padding-bottom:2px;transition:gap .2s,border-color .2s}
+.svc .more:hover{gap:10px;border-color:var(--cyan)}
+.combo{margin-top:20px;display:flex;gap:20px;align-items:center;justify-content:space-between;flex-wrap:wrap;padding:26px 30px;border-radius:var(--radius);border:1px solid rgba(34,230,255,.5);background:linear-gradient(120deg,rgba(34,230,255,.14),rgba(34,230,255,.03))}
+.combo b{display:block;font-weight:600;font-size:1.15rem;margin-bottom:4px}
+.combo span{color:var(--muted)}
