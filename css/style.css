@@ -71,6 +71,8 @@ header.scrolled{background:rgba(6,12,79,.82);backdrop-filter:blur(12px);-webkit-
 @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-16px)}}
 @keyframes orbit{to{rotate:360deg}}
 
+@media (min-width:701px){.hero-inner{max-width:1120px}.hero h1{font-size:clamp(2rem,4.2vw,4.1rem)}.hero h1 .l{display:block;white-space:nowrap}}
+
 /* Platforms */
 .platforms{padding:34px 0;border-block:1px solid var(--line);background:var(--bg-deep)}
 .platforms .wrap{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:12px 14px}
