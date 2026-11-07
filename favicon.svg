@@ -1,1 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="#0a1580"/><circle cx="32" cy="32" r="23" fill="none" stroke="#22e6ff" stroke-width="2.5"/><path d="M22 44 32 19l10 25M26 36h12" fill="none" stroke="#fff" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="49" cy="15" r="4" fill="#22e6ff"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><defs>
+<linearGradient id="leg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#8ff3ff"/></linearGradient>
+<linearGradient id="sw" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#22e6ff" stop-opacity=".55"/><stop offset=".55" stop-color="#22e6ff"/><stop offset="1" stop-color="#d9fbff"/></linearGradient>
+<radialGradient id="bg" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#1a2bc9"/><stop offset="1" stop-color="#060c4f"/></radialGradient>
+<filter id="gl" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs><circle cx="100" cy="100" r="96" fill="url(#bg)"/><circle cx="100" cy="100" r="95" fill="none" stroke="#22e6ff" stroke-opacity=".55" stroke-width="2"/><circle cx="100" cy="100" r="86" fill="none" stroke="#8cdcff" stroke-opacity=".16" stroke-width="1"/><g transform="translate(100 100) scale(.82) translate(-102 -99)"><g>
+<path d="M97 30 L109 30 L150 168 L127 168 Z" fill="url(#leg)"/>
+<path d="M97 30 L104 44 L70 168 L61 168 Z" fill="url(#leg)"/>
+<path d="M34 128 C62 178 136 160 178 66 C142 142 76 160 34 128 Z" fill="url(#sw)" filter="url(#gl)"/>
+</g></g></svg>

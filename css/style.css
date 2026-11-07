@@ -224,3 +224,9 @@ footer{padding:50px 0 34px;border-top:1px solid var(--line);background:var(--bg-
 .combo{margin-top:20px;display:flex;gap:20px;align-items:center;justify-content:space-between;flex-wrap:wrap;padding:26px 30px;border-radius:var(--radius);border:1px solid rgba(34,230,255,.5);background:linear-gradient(120deg,rgba(34,230,255,.14),rgba(34,230,255,.03))}
 .combo b{display:block;font-weight:600;font-size:1.15rem;margin-bottom:4px}
 .combo span{color:var(--muted)}
+
+/* Logo: simbolo + scritta */
+.logo{flex-direction:row;align-items:center;gap:12px}
+.logo .logo-t{display:flex;flex-direction:column;font-size:inherit;letter-spacing:normal;color:inherit;text-transform:none;margin:0}
+.logo-mark{width:40px;height:40px;flex:none}
+@media (max-width:600px){.logo-mark{width:34px;height:34px}.logo{gap:10px}}
