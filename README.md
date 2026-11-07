@@ -1,6 +1,6 @@
 # Sito Ares Account Manager
 
-Sito statico (HTML + CSS, senza framework) di www.aresaccountmanager.it, pubblicato su Cloudflare Pages.
+Sito statico (HTML + CSS, senza framework) di www.aresdigitalmarketing.com, pubblicato su Cloudflare Pages.
 
 - `index.html` – homepage
 - `grazie.html` – pagina dopo l'invio del modulo (conversione)

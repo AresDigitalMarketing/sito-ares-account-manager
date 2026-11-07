@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /grazie
 
-Sitemap: https://www.aresaccountmanager.it/sitemap.xml
+Sitemap: https://www.aresdigitalmarketing.com/sitemap.xml
